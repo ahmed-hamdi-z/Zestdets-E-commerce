@@ -1,0 +1,37 @@
+{
+  "name": "e-commerce",
+  "version": "1.0.0",
+  "description": "E-commerce",
+  "main": "index.js",
+  "scripts": {
+    "start": "node backend/server.js",
+    "dev": "SET NODE_ENV=DEVELOPMENT& nodemon backend/server",
+    "prod": "SET NODE_ENV=PRODUCTION& nodemon backend/server",
+    "seeder": "node backend/utilis/seeder.js",
+    "herouku-postbuild": "NPM_CONFIG_PRODUCTION=false  && npm install --prefix frontend && npm run build --prefix frontend"
+  },
+  "author": "zidan",
+  "license": "ISC",
+  "dependencies": {
+    "@stripe/react-stripe-js": "^2.3.0",
+    "@stripe/stripe-js": "^2.1.6",
+    "bcryptjs": "^2.4.3",
+    "body-parser": "^1.20.2",
+    "cdbreact": "^1.5.18",
+    "cloudinary": "^1.37.0",
+    "cookie-parser": "^1.4.6",
+    "dotenv": "^16.0.3",
+    "express": "^4.18.2",
+    "express-fileupload": "^1.4.0",
+    "jsonwebtoken": "^9.0.0",
+    "mongoose": "^7.1.0",
+    "nodemailer": "^6.9.1",
+    "stripe": "^13.6.0",
+    "swiper": "^9.3.2",
+    "tar": "^6.1.14",
+    "validator": "^13.9.0"
+  },
+  "devDependencies": {
+    "nodemon": "^2.0.22"
+  }
+}
